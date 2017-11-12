@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.luviasnguyen.shoppingapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MenuActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ClothingListActivity"
+            android:parentActivityName=".MenuActivity" />
+        <activity
+            android:name=".ComputersListActivity"
+            android:parentActivityName=".MenuActivity" />
+        <activity
+            android:name=".ShoesListActivity"
+            android:parentActivityName=".MenuActivity" />
+        <activity
+            android:name=".BeautyListActivity"
+            android:parentActivityName=".MenuActivity" />
+        <activity
+            android:name=".PhoneAccessoryListActivity"
+            android:parentActivityName=".MenuActivity" />
+        <activity
+            android:name=".ApplianceListActivity"
+            android:parentActivityName=".MenuActivity" />
+        <activity
+            android:name=".Clothing1DetailsActivity"
+            android:parentActivityName=".ClothingListActivity" />
+        <activity
+            android:name=".Beauty1DetailsActivity"
+            android:parentActivityName=".BeautyListActivity" />
+        <activity
+            android:name=".Computer1DetailsActivity"
+            android:parentActivityName=".ComputersListActivity" />
+        <activity
+            android:name=".Shoes1DetailsActivity"
+            android:parentActivityName=".ShoesListActivity" />
+        <activity
+            android:name=".Phone1DetailsActivity"
+            android:parentActivityName=".PhoneAccessoryListActivity" />
+        <activity android:name=".Appliance1DetailsActivity" />
+        <activity
+            android:name=".PromotionActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".FeedBacksActivity"
+            android:parentActivityName=".Clothing1DetailsActivity"></activity>
+    </application>
+
+</manifest>
